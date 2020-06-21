@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Observer", "Observer\Observ
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decorator", "Decorator\Decorator.vcxproj", "{1B7D8DDD-489F-4C60-B388-76298CC7A4B0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Strategy", "Strategy\Strategy.vcxproj", "{5959BB17-91F5-41A4-9E7B-FDB7583DD1A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{1B7D8DDD-489F-4C60-B388-76298CC7A4B0}.Debug|x64.Build.0 = Debug|x64
 		{1B7D8DDD-489F-4C60-B388-76298CC7A4B0}.Release|x64.ActiveCfg = Release|x64
 		{1B7D8DDD-489F-4C60-B388-76298CC7A4B0}.Release|x64.Build.0 = Release|x64
+		{5959BB17-91F5-41A4-9E7B-FDB7583DD1A2}.Debug|x64.ActiveCfg = Debug|x64
+		{5959BB17-91F5-41A4-9E7B-FDB7583DD1A2}.Debug|x64.Build.0 = Debug|x64
+		{5959BB17-91F5-41A4-9E7B-FDB7583DD1A2}.Release|x64.ActiveCfg = Release|x64
+		{5959BB17-91F5-41A4-9E7B-FDB7583DD1A2}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
