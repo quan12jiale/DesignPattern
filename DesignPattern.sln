@@ -15,6 +15,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Command", "Command\Command.vcxproj", "{0DA763A0-6B8C-4AD1-A96D-B80AD9C9DC3D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Adapter", "Adapter\Adapter.vcxproj", "{4178D853-39F2-44DE-8B4B-9060CD8965A8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facade", "Facade\Facade.vcxproj", "{98106677-05D6-48C8-A597-C33DD7979F81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,6 +49,14 @@ Global
 		{0DA763A0-6B8C-4AD1-A96D-B80AD9C9DC3D}.Debug|x64.Build.0 = Debug|x64
 		{0DA763A0-6B8C-4AD1-A96D-B80AD9C9DC3D}.Release|x64.ActiveCfg = Release|x64
 		{0DA763A0-6B8C-4AD1-A96D-B80AD9C9DC3D}.Release|x64.Build.0 = Release|x64
+		{4178D853-39F2-44DE-8B4B-9060CD8965A8}.Debug|x64.ActiveCfg = Debug|x64
+		{4178D853-39F2-44DE-8B4B-9060CD8965A8}.Debug|x64.Build.0 = Debug|x64
+		{4178D853-39F2-44DE-8B4B-9060CD8965A8}.Release|x64.ActiveCfg = Release|x64
+		{4178D853-39F2-44DE-8B4B-9060CD8965A8}.Release|x64.Build.0 = Release|x64
+		{98106677-05D6-48C8-A597-C33DD7979F81}.Debug|x64.ActiveCfg = Debug|x64
+		{98106677-05D6-48C8-A597-C33DD7979F81}.Debug|x64.Build.0 = Debug|x64
+		{98106677-05D6-48C8-A597-C33DD7979F81}.Release|x64.ActiveCfg = Release|x64
+		{98106677-05D6-48C8-A597-C33DD7979F81}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
