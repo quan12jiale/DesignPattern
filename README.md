@@ -5,7 +5,15 @@ C++ 设计模式
 
 * [策略模式](#strategy)
 * [观察者模式](#observer)
-* [装饰模式](#decorator)
+* [装饰者模式](#decorator)
+* [工厂模式](#factory)
+* [单例模式](#singleton)
+* [命令模式](#command)
+* [适配器模式](#adapter)
+* [外观模式](#facade)
+* [模板方法模式](#template)
+* [迭代器模式](#iterator)
+* [组合模式](#composite)
 
 <a id="strategy"></a>
 
@@ -128,110 +136,37 @@ int main(int argc, char *argv[])
 
 <a id="decorator"></a>
 
-## 装饰模式
+## 装饰者模式
 
-<b><details><summary> 代码</summary></b>
+<a id="factory"></a>
 
-```cpp
-class Beverage
-{
-public:
-	virtual QString getDescription() const { return description; }
-	virtual double cost() const = 0;
+## 工厂模式
 
-protected:
-	QString description;
-};
+<a id="singleton"></a>
 
-// 浓缩咖啡
-class Espresso : public Beverage
-{
-public:
-	Espresso() { description = "Espresso"; }
-	double cost() const override { return 1.99; }
-};
+## 单例模式
 
-// 综合咖啡
-class HouseBlend : public Beverage
-{
-public:
-	HouseBlend() { description = "House Blend Coffee"; }
-	double cost() const override { return 0.89; }
-};
+<a id="command"></a>
 
-// 深焙咖啡
-class DarkRoast : public Beverage
-{
-public:
-	DarkRoast() { description = "Dark Roast Coffee"; }
-	double cost() const override { return 0.99; }
-};
-```
+## 命令模式
 
-```cpp
-class CondimentDecorator : public Beverage
-{
-public:
-	QString getDescription() const override = 0;
-};
+<a id="adapter"></a>
 
-// 摩卡
-class Mocha : public CondimentDecorator
-{
-public:
-	Mocha(Beverage* beverage) { this->beverage = beverage; }
-	QString getDescription() const override { return beverage->getDescription() + ", Mocha"; }
-	double cost() const override { return beverage->cost() + 0.2; }
+## 适配器模式
 
-private:
-	Beverage* beverage;
-};
+<a id="facade"></a>
 
-// 豆浆
-class Soy : public CondimentDecorator
-{
-public:
-	Soy(Beverage* beverage) { this->beverage = beverage; }
-	QString getDescription() const override { return beverage->getDescription() + ", Soy"; }
-	double cost() const override { return beverage->cost() + 0.15; }
+## 外观模式
 
-private:
-	Beverage* beverage;
-};
+<a id="template"></a>
 
-// 奶泡
-class Whip : public CondimentDecorator
-{
-public:
-	Whip(Beverage* beverage) { this->beverage = beverage; }
-	QString getDescription() const override { return beverage->getDescription() + ", Whip"; }
-	double cost() const override { return beverage->cost() + 0.1; }
+## 模板方法模式
 
-private:
-	Beverage* beverage;
-};
-```
+<a id="iterator"></a>
 
-```cpp
-int main(int argc, char *argv[])
-{
-    Beverage* beverage = new Espresso;
-    qDebug() << beverage->getDescription() << "$" << beverage->cost();
+## 迭代器模式
 
-    Beverage* beverage2 = new DarkRoast;
-    beverage2 = new Mocha(beverage2);
-    beverage2 = new Mocha(beverage2);
-    beverage2 = new Whip(beverage2);
-    qDebug() << beverage2->getDescription() << "$" << beverage2->cost();
+<a id="composite"></a>
 
-    Beverage* beverage3 = new HouseBlend;
-    beverage3 = new Soy(beverage3);
-    beverage3 = new Mocha(beverage3);
-    beverage3 = new Whip(beverage3);
-    qDebug() << beverage3->getDescription() << "$" << beverage3->cost();
+## 组合模式
 
-    return 0;
-}
-```
-
-</details>
