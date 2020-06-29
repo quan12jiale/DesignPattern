@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Facade", "Facade\Facade.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AbstractFactory", "AbstractFactory\AbstractFactory.vcxproj", "{49505B15-4D06-45DA-96EE-6339066E3A44}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TemplateMethod", "TemplateMethod\TemplateMethod.vcxproj", "{35E4901C-078C-44BE-A0E2-2728C4B900A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -57,6 +59,10 @@ Global
 		{49505B15-4D06-45DA-96EE-6339066E3A44}.Debug|x64.Build.0 = Debug|x64
 		{49505B15-4D06-45DA-96EE-6339066E3A44}.Release|x64.ActiveCfg = Release|x64
 		{49505B15-4D06-45DA-96EE-6339066E3A44}.Release|x64.Build.0 = Release|x64
+		{35E4901C-078C-44BE-A0E2-2728C4B900A0}.Debug|x64.ActiveCfg = Debug|x64
+		{35E4901C-078C-44BE-A0E2-2728C4B900A0}.Debug|x64.Build.0 = Debug|x64
+		{35E4901C-078C-44BE-A0E2-2728C4B900A0}.Release|x64.ActiveCfg = Release|x64
+		{35E4901C-078C-44BE-A0E2-2728C4B900A0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
