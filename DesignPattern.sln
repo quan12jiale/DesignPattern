@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Iterator", "Iterator\Iterat
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Composite", "Composite\Composite.vcxproj", "{9264BBDE-BA95-45C0-A46B-AC808B2A522B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "State", "State\State.vcxproj", "{C49E705B-9FDE-4CE7-913C-CD953419C20F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -75,6 +77,10 @@ Global
 		{9264BBDE-BA95-45C0-A46B-AC808B2A522B}.Debug|x64.Build.0 = Debug|x64
 		{9264BBDE-BA95-45C0-A46B-AC808B2A522B}.Release|x64.ActiveCfg = Release|x64
 		{9264BBDE-BA95-45C0-A46B-AC808B2A522B}.Release|x64.Build.0 = Release|x64
+		{C49E705B-9FDE-4CE7-913C-CD953419C20F}.Debug|x64.ActiveCfg = Debug|x64
+		{C49E705B-9FDE-4CE7-913C-CD953419C20F}.Debug|x64.Build.0 = Debug|x64
+		{C49E705B-9FDE-4CE7-913C-CD953419C20F}.Release|x64.ActiveCfg = Release|x64
+		{C49E705B-9FDE-4CE7-913C-CD953419C20F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
