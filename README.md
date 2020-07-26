@@ -3,66 +3,44 @@ C++ 设计模式
 
 ## 目录
 
-<table class="reference notranslate">
-<tr><th style="width:5%;">序号</th><th style="width:45%;">模式 &amp; 描述</th><th>包括</th></tr>
-<tr><td>1</td><td><b>创建型模式</b><br />这些设计模式提供了一种在创建对象的同时隐藏创建逻辑的方式，而不是使用 new 运算符直接实例化对象。这使得程序在判断针对某个给定实例需要创建哪些对象时更加灵活。</td>
-<td>
-<ul>
-<li> [工厂模式](#factory)</li>
-<li> [抽象工厂模式](#abstractfactory)</li>
-<li> [单例模式](#singleton)</li>
-<li>建造者模式（Builder Pattern）</li>
-<li>原型模式（Prototype Pattern）</li>
-</ul>
-</td>
-</tr>
-<tr><td>2</td><td><b>结构型模式</b><br />这些设计模式关注类和对象的组合。继承的概念被用来组合接口和定义组合对象获得新功能的方式。</td>
-<td>
-<ul>
-<li> [适配器模式](#adapter)</li>
-<li>桥接模式（Bridge Pattern）</li>
-<li>过滤器模式（Filter、Criteria Pattern）</li>
-<li> [组合模式](#composite)</li>
-<li> [装饰者模式](#decorator)</li>
-<li> [外观模式](#facade)</li>
-<li>享元模式（Flyweight Pattern）</li>
-<li> [代理模式](#proxy)</li>
-</ul>
-</td>
-</tr>
-<tr><td>3</td><td><b>行为型模式</b><br />这些设计模式特别关注对象之间的通信。</td>
-<td>
-<ul>
-<li>责任链模式（Chain of Responsibility Pattern）</li>
-<li> [命令模式](#command)</li>
-<li>解释器模式（Interpreter Pattern）</li>
-<li> [迭代器模式](#iterator)</li>
-<li>中介者模式（Mediator Pattern）</li>
-<li>备忘录模式（Memento Pattern）</li>
-<li> [观察者模式](#observer)</li>
-<li> [状态模式](#state)</li>
-<li>空对象模式（Null Object Pattern）</li>
-<li> [策略模式](#strategy)</li>
-<li> [模板方法模式](#template)</li>
-<li>访问者模式（Visitor Pattern）</li>
-</ul>
-</td>
-</tr>
-<tr><td>4</td><td><b>J2EE 模式</b><br />这些设计模式特别关注表示层。这些模式是由 Sun Java Center 鉴定的。</td>
-<td>
-<ul>
-<li> [MVC模式](#MVC)</li>
-<li>业务代表模式（Business Delegate Pattern）</li>
-<li>组合实体模式（Composite Entity Pattern）</li>
-<li>数据访问对象模式（Data Access Object Pattern）</li>
-<li>前端控制器模式（Front Controller Pattern）</li>
-<li>拦截过滤器模式（Intercepting Filter Pattern）</li>
-<li>服务定位器模式（Service Locator Pattern）</li>
-<li>传输对象模式（Transfer Object Pattern）</li>
-</ul>
-</td>
-</tr>
-</table>
+### 创建型模式
+
+* [工厂模式](#factory)
+* [抽象工厂模式](#abstractfactory)
+* [单例模式](#singleton)
+* 建造者模式
+* 原型模式
+
+### 结构型模式
+
+* [适配器模式](#adapter)
+* 桥接模式
+* 过滤器模式
+* [组合模式](#composite)
+* [装饰者模式](#decorator)
+* [外观模式](#facade)
+* 享元模式
+* [代理模式](#proxy)
+
+### 行为型模式
+
+* 责任链模式
+* [命令模式](#command)
+* 解释器模式
+* [迭代器模式](#iterator)
+* 中介者模式
+* 备忘录模式
+* [观察者模式](#observer)
+* [状态模式](#state)
+* 空对象模式
+* [策略模式](#strategy)
+* [模板方法模式](#template)
+* 访问者模式
+
+### 复合模式
+
+* [MVC模式](#MVC)
+
 
 <a id="strategy"></a>
 
