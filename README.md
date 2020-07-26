@@ -64,7 +64,7 @@ C++ 设计模式
 </p>
 <p><b>注意事项：</b>如果一个系统的策略多于四个，就需要考虑使用混合模式，解决策略类膨胀的问题。</p>
 <p><b>类图：</b>策略接口：Strategy类，Contex类中有一个Strategy类的指针。</p>
-<img src="https://www.runoob.com/wp-content/uploads/2014/08/strategy_pattern_uml_diagram.jpg" alt="策略模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/strategy_pattern_uml_diagram.jpg" alt="策略模式的 UML 图" />
 
 <a id="observer"></a>
 
@@ -89,7 +89,7 @@ C++ 设计模式
 <br>Subject接口：声明registerObserver、removeObserver、notifyObservers纯虚函数，以及QList<Observer*> observers的成员。
 <br>Observer接口声明update纯虚函数，以及Subject* subject的成员。
 </p>
-<img src="https://www.runoob.com/wp-content/uploads/2014/08/strategy_pattern_uml_diagram.jpg" alt="观察者模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/observer_pattern_uml_diagram.jpg" alt="观察者模式的 UML 图" />
 
 <a id="decorator"></a>
 
@@ -114,7 +114,7 @@ C++ 设计模式
 <br>组件：定义Beverage饮料接口，以及cost价格纯虚函数；定义实现了Beverage接口的具体饮料类。
 <br>装饰者：定义继承了Beverage接口的CondimentDecorator调料装饰者接口；定义实现了调料装饰者接口的具体调料类，其中有一个Beverage类型的指针成员。
 </p>
-<img src="https://www.runoob.com/wp-content/uploads/2014/08/strategy_pattern_uml_diagram.jpg" alt="装饰者模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/decorator_pattern_uml_diagram.jpg" alt="装饰者模式的 UML 图" />
 
 <a id="factory"></a>
 
@@ -147,7 +147,7 @@ C++ 设计模式
 <p><b>类图：</b>
 <br>私有的构造函数；私有的静态指向单例的指针成员；公有的getInstance函数。
 </p>
-<img src="https://www.runoob.com/wp-content/uploads/2014/08/strategy_pattern_uml_diagram.jpg" alt="单例模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/singleton_pattern_uml_diagram.jpg" alt="单例模式的 UML 图" />
 
 <a id="command"></a>
 
@@ -173,7 +173,7 @@ C++ 设计模式
 <br>声明Command接口，及execute纯虚函数；分别针对buy，sell函数，定义实现了Command接口的BuyCommand和SellCommand具体类，其中有一个Receiver* receiver成员。
 <br>Invoker；调用者，有一个QList<Command*> commandList成员，以及addCommand和runCommand(int index)函数。
 </p>
-<img src="https://www.runoob.com/wp-content/uploads/2014/08/strategy_pattern_uml_diagram.jpg" alt="命令模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/command_pattern_uml_diagram.jpg" alt="命令模式的 UML 图" />
 
 <a id="adapter"></a>
 
@@ -211,7 +211,7 @@ C++ 设计模式
 <br>Adaptee接口：被适配者，以及实现了Adaptee接口的具体类。
 <br>Adapter；对象适配器，继承了Target接口，有一个Adaptee指针成员；类适配器，同时继承Target接口和Adaptee接口。
 </p>
-<img src="https://www.runoob.com/wp-content/uploads/2014/08/strategy_pattern_uml_diagram.jpg" alt="适配器模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/adapter_pattern_uml_diagram.jpg" alt="适配器模式的 UML 图" />
 
 <a id="facade"></a>
 
@@ -261,6 +261,7 @@ C++ 设计模式
 2、重要的、复杂的方法，可以考虑作为模板方法。</p>
 <p><b>注意事项：</b>为防止恶意操作，一般模板方法都加上 final 关键词。</p>
 <p><b>类图：</b>创建一个抽象类，它的模板方法被设置为 final。</p>
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/template_pattern_uml_diagram.jpg" alt="模板方法模式的 UML 图" />
 
 <a id="iterator"></a>
 
@@ -285,7 +286,7 @@ C++ 设计模式
 <br>Iterator接口；声明了bool hasNext以及QVariant next纯虚函数；以及实现该接口的具体迭代器。
 <br>Container接口：声明了getIterator纯虚函数；以及实现了该接口的具体容器类。
 </p>
-<img src="https://www.runoob.com/wp-content/uploads/2014/08/strategy_pattern_uml_diagram.jpg" alt="迭代器模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/iterator_pattern_uml_diagram.jpg" alt="迭代器模式的 UML 图" />
 
 <a id="composite"></a>
 
@@ -313,7 +314,7 @@ C++ 设计模式
 <br>Leaf叶节点类：继承Component接口，实现operation函数。
 <br>Composite枝节点类：继承Component接口，实现add、remove、getChild以及operation函数。
 </p>
-<img src="https://www.runoob.com/wp-content/uploads/2014/08/strategy_pattern_uml_diagram.jpg" alt="组合模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/composite_pattern_uml_diagram.jpg" alt="组合模式的 UML 图" />
 
 <a id="state"></a>
 
@@ -389,6 +390,7 @@ C++ 设计模式
 <br>Printer打印机类：实现了Printable接口，打印机对象创建开销很大，其构造函数会花费较多时间才能执行完毕。
 <br>PrinterProxy打印机代理类：实现了Printable接口，有一个Printer打印机成员，当第一次调用print时，才会构造打印机对象。
 </p>
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/proxy_pattern_uml_diagram.jpg" alt="代理模式的 UML 图" />
 
 <a id="MVC"></a>
 
@@ -403,3 +405,4 @@ C++ 设计模式
 <p><b>组合：</b>
 <br>视图内部使用组合模式来管理窗口、按钮以及其他显示组件：当控制器告诉视图更新时，只需告诉视图最顶层的组件即可，组合会处理其余的事。
 </p>
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/MVC_pattern_uml_diagram.jpg" alt="MVC模式的 UML 图" />
