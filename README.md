@@ -405,4 +405,5 @@ C++ 设计模式
 <p><b>组合：</b>
 <br>视图内部使用组合模式来管理窗口、按钮以及其他显示组件：当控制器告诉视图更新时，只需告诉视图最顶层的组件即可，组合会处理其余的事。
 </p>
+<p><b>类图：</b></p>
 <img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/MVC_pattern_uml_diagram.jpg" alt="MVC模式的 UML 图" />
