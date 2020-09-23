@@ -156,8 +156,8 @@ C++ 设计模式
 <p><b>注意事项：</b>系统需要支持命令的撤销(Undo)操作和恢复(Redo)操作，也可以考虑使用命令模式，见命令模式的扩展。</p>
 <p><b>类图：</b>
 <br>Receiver；接收者，真正执行命令的对象，定义了buy，sell函数。
-<br>声明Command接口，及execute纯虚函数；分别针对buy，sell函数，定义实现了Command接口的BuyCommand和SellCommand具体类，其中有一个Receiver* receiver成员。
-<br>Invoker；调用者，有一个QList<Command*> commandList成员，以及addCommand和runCommand(int index)函数。
+<br>声明Command接口，及execute纯虚函数；分别针对buy，sell函数，定义实现了Command接口的BuyCommand和SellCommand具体类，其中有一个Receiver* receiver成员。Qt中有QUndoCommand类。
+<br>Invoker；调用者，有一个QList<Command*> commandList成员，以及addCommand和runCommand(int index)函数。Qt中有QUndoStack类。
 </p>
 <img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/command_pattern_uml_diagram.jpg" alt="命令模式的 UML 图" />
 
