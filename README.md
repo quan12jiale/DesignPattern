@@ -8,7 +8,7 @@ C++ 设计模式
 * [工厂模式](#factory)
 * [抽象工厂模式](#abstractfactory)
 * [单例模式](#singleton)
-* 建造者模式
+* [生成器模式](#builder)
 * 原型模式
 
 ### 结构型模式
@@ -348,3 +348,18 @@ C++ 设计模式
 </p>
 <p><b>类图：</b></p>
 <img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/MVC_pattern_uml_diagram.jpg" alt="MVC模式的 UML 图" />
+
+<a id="builder"></a>
+
+## 生成器模式
+
+<p><b>定义：</b>生成器模式，又称建造者模式。它提供了一种创建对象的最佳方式，一个 Builder 类会一步一步构造最终的对象。</p>
+<p><b>生成器模式有4个角色：</b>
+1、Product: 最终要生成的对象，例如 Computer实例。
+2、Builder： 构建者的抽象基类（有时会使用接口代替）。其定义了构建Product的抽象步骤，其实体类需要实现这些步骤。其会包含一个用来返回最终产品的方法Product getProduct()。
+3、ConcreteBuilder: Builder的实现类。
+4、Director: 决定如何构建最终产品的算法. 其会包含一个负责组装的方法void Construct(Builder builder)， 在这个方法中通过调用builder的方法，就可以设置builder，等设置完成后，就可以通过builder的 getProduct() 方法获得最终的产品。
+</p>
+<p><b>类图：</b></p>
+<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/builder_pattern_uml_diagram.jpg" alt="生成器模式的 UML 图" />
+
