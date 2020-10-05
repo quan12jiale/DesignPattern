@@ -361,5 +361,5 @@ C++ 设计模式
 4、Director: 决定如何构建最终产品的算法. 其会包含一个负责组装的方法void Construct(Builder builder)， 在这个方法中通过调用builder的方法，就可以设置builder，等设置完成后，就可以通过builder的 getProduct() 方法获得最终的产品。
 </p>
 <p><b>类图：</b></p>
-<img src="https://github.com/quan12jiale/DesignPattern/blob/master/images/builder_pattern_uml_diagram.jpg" alt="生成器模式的 UML 图" />
+<img src="https://github.com/quan12jiale/DesignPattern/blob/sourcemaking/images/builder_pattern_uml_diagram.jpg" alt="生成器模式的 UML 图" />
 
