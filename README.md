@@ -355,11 +355,23 @@ C++ 设计模式
 
 <p><b>定义：</b>生成器模式，又称建造者模式。它提供了一种创建对象的最佳方式，一个 Builder 类会一步一步构造最终的对象。</p>
 <p><b>生成器模式有4个角色：</b>
-1、Product: 最终要生成的对象，例如 Computer实例。
-2、Builder： 构建者的抽象基类（有时会使用接口代替）。其定义了构建Product的抽象步骤，其实体类需要实现这些步骤。其会包含一个用来返回最终产品的方法Product getProduct()。
-3、ConcreteBuilder: Builder的实现类。
-4、Director: 决定如何构建最终产品的算法. 其会包含一个负责组装的方法void Construct(Builder builder)， 在这个方法中通过调用builder的方法，就可以设置builder，等设置完成后，就可以通过builder的 getProduct() 方法获得最终的产品。
+<br>1、Product: 最终要生成的对象，例如 Computer实例。
+<br>2、Builder： 构建者的抽象基类（有时会使用接口代替）。其定义了构建Product的抽象步骤，其实体类需要实现这些步骤。其会包含一个用来返回最终产品的方法Product getProduct()。
+<br>3、ConcreteBuilder: Builder的实现类。
+<br>4、Director: 决定如何构建最终产品的算法. 其会包含一个负责组装的方法void Construct(Builder builder)， 在这个方法中通过调用builder的方法，就可以设置builder，等设置完成后，就可以通过builder的 getProduct() 方法获得最终的产品。
 </p>
 <p><b>类图：</b></p>
 <img src="https://github.com/quan12jiale/DesignPattern/blob/sourcemaking/images/builder_pattern_uml_diagram.jpg" alt="生成器模式的 UML 图" />
 
+<a id="prototype"></a>
+
+## 原型模式
+
+<p><b>定义：</b>原型模式使用原型实例指定创建对象的种类，并且通过拷贝原型对象创建新的对象。</p>
+<p>
+Prototype模式提供了一个通过已存在对象进行新对象创建的接口（clone）， clone()实现和具体的语言相关，在C++中通过拷贝构造函数实现。
+<br>原型模式实际上就是从一个对象再创建另外一个可定制的对象，而且不需要知道任何创建的细节。在初始化的信息不发生变化的情况下，克隆是最好的办法，既隐藏了对象创建的细节，又大大提高了性能。因为如果不用clone，每次new都需要执行一次构造函数，如果构造函数的执行时间很长，那么多次的执行初始化操作就太低效了。
+<br>原型模式实现clone接口的时候必须使用深拷贝。原型模式重点在从自身赋值自己创建新的类对象，隐藏创建的细节。
+</p>
+<p><b>类图：</b></p>
+<img src="https://github.com/quan12jiale/DesignPattern/blob/sourcemaking/images/prototype_pattern_uml_diagram.jpg" alt="原型模式的 UML 图" />

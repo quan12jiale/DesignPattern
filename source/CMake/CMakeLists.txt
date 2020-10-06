@@ -61,6 +61,7 @@ find_package(Qt5Widgets REQUIRED )
 
 
 add_subdirectory(builder)
+add_subdirectory(prototype)
 
 
 # ÉèÖÃÆô¶¯Ïî
