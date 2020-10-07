@@ -9,7 +9,7 @@ C++ 设计模式
 * [抽象工厂模式](#abstractfactory)
 * [单例模式](#singleton)
 * [生成器模式](#builder)
-* 原型模式
+* [原型模式](#prototype)
 
 ### 结构型模式
 
