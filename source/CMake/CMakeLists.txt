@@ -62,7 +62,7 @@ find_package(Qt5Widgets REQUIRED )
 
 add_subdirectory(builder)
 add_subdirectory(prototype)
-
+add_subdirectory(bridge)
 
 # …Ë÷√∆Ù∂ØœÓ
-set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT builder)
+set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT (bridge)

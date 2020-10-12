@@ -14,7 +14,7 @@ C++ 设计模式
 ### 结构型模式
 
 * [适配器模式](#adapter)
-* 桥接模式
+* [桥接模式](#bridge)
 * 过滤器模式
 * [组合模式](#composite)
 * [装饰者模式](#decorator)
@@ -375,3 +375,19 @@ Prototype模式提供了一个通过已存在对象进行新对象创建的接�
 </p>
 <p><b>类图：</b></p>
 <img src="https://github.com/quan12jiale/DesignPattern/blob/sourcemaking/images/prototype_pattern_uml_diagram.jpg" alt="原型模式的 UML 图" />
+
+<a id="bridge"></a>
+
+## 桥接模式
+
+<p><b>定义：</b>桥接（Bridge）是用于把抽象化与实现化解耦，使得二者可以独立变化。这种类型的设计模式属于结构型模式，它通过提供抽象化和实现化之间的桥接结构，来实现二者的解耦。</p>
+<p><b>桥接模式所涉及的角色有：</b>
+<br><b>1、抽象化(Abstraction)角色：</b>抽象化给出的定义，并保存一个对实现化对象的引用。
+<br><b>2、修正抽象化(RefinedAbstraction)角色：</b>扩展抽象化角色，改变和修正父类对抽象化的定义。
+<br><b>3、实现化(Implementor)角色：</b>这个角色给出实现化角色的接口，但不给出具体的实现。
+<br>必须指出的是，这个接口不一定和抽象化角色的接口定义相同，实际上，这两个接口可以非常不一样。
+<br>实现化角色应当只给出底层操作，而抽象化角色应当只给出基于底层操作的更高一层的操作。
+<br><b>4、具体实现化(ConcreteImplementor)角色：</b>这个角色给出实现化角色接口的具体实现。
+</p>
+<p><b>类图：</b></p>
+<img src="https://github.com/quan12jiale/DesignPattern/blob/sourcemaking/images/bridge_pattern_uml_diagram.jpg" alt="原型模式的 UML 图" />
