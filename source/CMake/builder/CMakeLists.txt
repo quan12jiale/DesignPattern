@@ -32,7 +32,7 @@ add_executable(${LIBRARY_TARGET_NAME}
 )
 
 ##指定工程文件分组
-set_target_properties(${LIBRARY_TARGET_NAME} PROPERTIES FOLDER "folderName")
+set_target_properties(${LIBRARY_TARGET_NAME} PROPERTIES FOLDER "FolderName")
 
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:CONSOLE")
 
@@ -43,6 +43,8 @@ set_target_properties(${LIBRARY_TARGET_NAME} PROPERTIES LINK_FLAGS "/SAFESEH:NO 
 
 ##设置预处理器定义
 target_compile_definitions(${LIBRARY_TARGET_NAME} PRIVATE UNICODE WIN32 QT_DLL QT_NO_DEBUG NDEBUG QT_CORE_LIB QT_GUI_LIB QT_WIDGETS_LIB)
+##右键项目，属性高级 >> 字符集 : 使用Unicode字符集
+add_definitions(-DUNICODE -D_UNICODE)
 
 ##配置构建/使用时的头文件路径
 target_include_directories(

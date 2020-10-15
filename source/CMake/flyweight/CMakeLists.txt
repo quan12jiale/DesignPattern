@@ -1,5 +1,5 @@
 ##设置库名称
-set(LIBRARY_TARGET_NAME bridge)
+set(LIBRARY_TARGET_NAME flyweight)
 
 ##查找所有头文件
 file(GLOB_RECURSE  ${LIBRARY_TARGET_NAME}_HEADER_FILES
