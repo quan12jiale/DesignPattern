@@ -59,11 +59,11 @@ find_package(Qt5Core REQUIRED )
 find_package(Qt5Gui REQUIRED )
 find_package(Qt5Widgets REQUIRED )
 
-
+add_subdirectory(factory)
 add_subdirectory(builder)
 add_subdirectory(prototype)
 add_subdirectory(bridge)
 add_subdirectory(flyweight)
 
 # …Ë÷√∆Ù∂ØœÓ
-set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT flyweight)
+set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT factory)
