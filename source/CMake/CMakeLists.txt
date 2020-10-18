@@ -64,6 +64,7 @@ add_subdirectory(builder)
 add_subdirectory(prototype)
 add_subdirectory(bridge)
 add_subdirectory(flyweight)
+add_subdirectory(chainOfResponsibility)
 
 # …Ë÷√∆Ù∂ØœÓ
-set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT factory)
+set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT chainOfResponsibility)
