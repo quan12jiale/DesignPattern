@@ -62,9 +62,12 @@ find_package(Qt5Widgets REQUIRED )
 add_subdirectory(factory)
 add_subdirectory(builder)
 add_subdirectory(prototype)
+
 add_subdirectory(bridge)
 add_subdirectory(flyweight)
+
 add_subdirectory(chainOfResponsibility)
+add_subdirectory(mediator)
 
 # …Ë÷√∆Ù∂ØœÓ
-set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT chainOfResponsibility)
+set_property(DIRECTORY PROPERTY VS_STARTUP_PROJECT mediator)
